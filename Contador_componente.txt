@@ -1,0 +1,27 @@
+﻿// ContadorComponente.js
+
+
+import React, { useState } from 'react';
+
+
+const ContadorComponente = () => {
+  // Definindo um estado para armazenar o valor do contador
+  const [contador, setContador] = useState(0);
+
+
+  // Função para aumentar o contador
+  const aumentarContador = () => {
+    setContador(contador + 1);
+  };
+
+
+  return (
+    <div>
+      <p>Valor do Contador: {contador}</p>
+      <button onClick={aumentarContador}>Aumentar</button>
+    </div>
+  );
+};
+
+
+export default ContadorComponente;
